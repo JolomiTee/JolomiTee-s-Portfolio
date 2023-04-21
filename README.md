@@ -3,5 +3,9 @@ So i took a look at my old web portfolio, good old HTML, CSS and Javascript, and
 
 Basically, I'm recreating the template but as a react app, just to have something doing for the mean time.
 
-### Technologies Used 🛠👩‍💻⚙:
-![React](https://icons8.com/icon/t5K2CR8feVdX/react)
+### Technologies in use 🛠👩‍💻⚙:
+* React
+* TailwindCSS
+* FramerMotion
+* React Router
+* Vite Build tool
