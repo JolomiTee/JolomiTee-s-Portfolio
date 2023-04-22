@@ -1,3 +1,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    /* #RESET */
+    *, *::before, *::after{
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a{ text-decoration: none;
+       @apply text-bittersweet-shimmer
+    }
+
+
+    img, ion-icon, a, button, time, span{ display: block;}
+
+    sup{
+        font-size: 8px;
+    }
+    button{
+        font: inherit;
+        background: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+    }
+    input, textarea{
+        display: block;
+        width: 100%;
+        background: none;
+        font: inherit;
+    }
+    ::selection{
+        @apply bg-orange-yellow-crayola;
+        color: var(--smoky-black);
+    }
+    :focus{ @apply outline-orange-yellow-crayola }
+
+    html{ font-family: "Philosopher" }
+
+    body{ @apply bg-smoky-black}
+}
+
+/* REUSED STYLE */
+.sidebar, article{
+    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1];
+}
+.separator{
+    @apply w-full h-[1px] bg-jet my-4 mx-0;
+}
+.icon-box{
+    @apply relative bg-gradient-onyx w-[30px] h-[30px] rounded-lg flex justify-center items-center text-fs-4 text-orange-yellow-crayola shadow-1 z-[1];
+}
+.icon-box::before{
+    content: "";
+    border-radius: inherit;
+    @apply absolute inset-[1px] bg-eerie-black-1 z-[1];
+}
+/* .icon-box ion-icon{  --ionicon-stroke-width: 35px; } */
+
+article{ display: none; }
+
+article.active{
+    @apply block;
+    animation: fade 0.5s ease delay iteration-count backwards fill-mode;
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.h2,h3,h4,.h5{
+    @apply text-white-2 capitalize;
+}
+
+.h2{@apply text-fs-1;}
+.h3{@apply text-fs-2;}
+.h4{@apply text-fs-4;}
+.h5{@apply text-fs-5 font-fw-500;}
+
+.article-title{
+    @apply relative pb-2;
+}
+.article-title::after{
+    content: "";
+    animation: change ease 10s infinite;
+    @apply absolute bottom-0 left-0 w-[30px] h-[3px] bg-gradient-yellow rounded-[3px];
+}
+@keyframes change {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        filter: hue-rotate(20deg);
+    }
+    20% {
+        filter: hue-rotate(40deg);
+    }
+    30% {
+        filter: hue-rotate(60deg);
+    }
+    40% {
+        filter: hue-rotate(80deg);
+    }
+    50% {
+        filter: hue-rotate(100deg);
+    }
+    60% {
+        filter: hue-rotate(150deg);
+    }
+    70% {
+        filter: hue-rotate(200deg);
+    }
+    80% {
+        filter: hue-rotate(250deg);
+    }
+    90% {
+        filter: hue-rotate(300deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.has-scrollbar::-webkit-scrollbar{
+    @apply w-[5px] h-[5px];
+}
+.has-scrollbar::-webkit-scrollbar-track{
+    @apply rounded-[5px] bg-onyx;
+}
+.has-scrollbar::-webkit-scrollbar-thumb{
+    background: var(--orange-yellow-crayola);
+    border-radius: 5px;
+}
+.has-scrollbar::-webkit-scrollbar-button{
+    /* background: var(--orange-yellow-crayola); */
+    @apply w-[20px] bg-orange-yellow-crayola;
+}
+.content-card{
+    @apply relative bg-border-onyx p-[15px] pt-[45px] rounded-[14px] shadow-2 z-[1] cursor-pointer;
+}
+.content-card::before{
+    content: "";
+    border-radius: inherit;
+    @apply absolute inset-[1px] bg-gradient-jet z-[1];
+
+}

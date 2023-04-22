@@ -1,10 +1,13 @@
 import './App.css'
+import MainContent from './components/MainContent'
+import Sidebar from './components/Sidebar'
 
 function App() {
 
   return (
     <div className="App">
-        <h1 className='text-3xl font-bold underline'>Hello JolomiTee</h1>
+        <Sidebar />
+        <MainContent />
     </div>
   )
 }
