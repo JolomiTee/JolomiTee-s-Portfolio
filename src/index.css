@@ -57,7 +57,7 @@
     border-radius: inherit;
     @apply absolute inset-[1px] bg-eerie-black-1 z-[1];
 }
-/* .icon-box ion-icon{  --ionicon-stroke-width: 35px; } */
+.icon-box ion-icon{  --ionicon-stroke-width: 35px; }
 
 article{ display: none; }
 

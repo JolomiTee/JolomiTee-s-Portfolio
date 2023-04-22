@@ -47,6 +47,9 @@ export default {
             "2": "0.5s ease-in-out",
         },
         extend: {
+            borderRadius: {
+                inherit: "inherit",
+            },
             backgroundImage: (theme) => ({
                 "gradient-onyx": `linear-gradient(
                     to bottom right,

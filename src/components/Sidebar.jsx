@@ -1,104 +1,63 @@
 import React from 'react'
+import ProfilePhoto from "../assets/images/ProfilePhoto.jpg"
+import Info from './subcomponents/Info'
 
 const Sidebar = () => {
   return (
-    <aside class="sidebar active" data-sidebar>
-            <div class="sidebar-info">
-                <figure class="avatar-box">
-                    <img src="./assets/images/me.jpg" alt="Jolomi Taiwo" width="80"/>
-                </figure>
-                <div class="info-content">
-                    <h1 class="name" title="Jolomi Taiwo">Jolomi Taiwo E.</h1>
-                    <p class="title">Web Designer</p>
-                </div>
-
-                <button type="button" class="info-more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
-                    <ion-icon name="chevron-down"></ion-icon>
-                </button>
+    <aside className="sidebar active" data-sidebar>
+        <div className="sidebar-info relative flex justify-start items-center gap-[15px]">
+            <figure className="avatar-box bg-gradient-onyx rounded-2xl">
+                <img src={ProfilePhoto} alt="Jolomi Taiwo" width="80" className='rounded-2xl'/>
+            </figure>
+            <div className="info-content">
+                <h1 className="name text-white-2 text-fs-2 font-fw-500 text-center" title="Jolomi Taiwo">Jolomi Taiwo E.</h1>
+                <p className="title text-white-1 bg-onyx text-fs-5 font-fw-300 w-full px-3 py-1 rounded-lg">Frontend Web Developer</p>
             </div>
 
-            <div class="sidebar-info_more">
+            <button
+                type="button"
+                className="info-more-btn rounded-tr-[20px] rounded-bl-2xl absolute top-[-15px] right-[-15px] text-fs-7 text-orange-yellow-crayola bg-gradient-onyx p-3 shadow-2 transition-2 z-[1] before:absolute before:inset-[1px] before:rounded-inherit before:bg-gradient-jet before:transition-1 before:z-[1] hover:bg-gradient-yellow-1 focus:bg-gradient-yellow-1 hover:before:bg-gradient-yellow-2 focus:before:bg-gradient-yellow-2"
+                data-sidebar-btn
+            >
+                <span className='hidden'>Show Contacts</span>
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+        </div>
 
-                <div class="separator"></div>
+        <div className="sidebar-info_more">
 
-                <ul class="contact-list">
+            <div className="separator"></div>
 
-                    <li class="contact-item">
+            <Info />
 
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
+            <div className="separator"></div>
 
-                        <div class="contact-info">
-                            <p class="contact-title">Email</p>
-                            <a href="mailto:taiwot2002@gmail.com" class="contact-link">taiwot2002@gmail.com</a>
-                        </div>
+            <ul className="social-list">
 
-                    </li>
+                <li className="social-item">
+                    <a href="https://github.com/JolomiTee" target="_blank" className="social-link">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li className="social-item">
+                    <a href="https://www.linkedin.com/in/jolomitee1029" target="_blank" className="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li className="social-item">
+                    <a href="https://twitter.com/truff_lazy?t=jbp7A_YA_lehGhDZcKhOCw&s=09" target="_blank" className="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li className="social-item">
+                    <a href="https://www.instagram.com/jolomi_t.e/" target="_blank" className="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
 
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Phone</p>
-                            <a href="tel:+123 456 7890" class="contact-link">+234 906 160 3717</a>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
-                        <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
-                            <time datetime="2002-03-04">March 4, 2002</time>
-                        </div>
-                    </li>
-
-                    <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
-                        <div class="contact-info">
-                            <p class="contact-title">Location</p>
-                            <address>Kado Estate, Abuja, Nigeria</address>
-                        </div>
-
-                    </li>
-                </ul>
-
-                <div class="separator"></div>
-
-                <ul class="social-list">
-
-                    <li class="social-item">
-                        <a href="https://github.com/JolomiTee" target="_blank" class="social-link">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.linkedin.com/in/jolomitee1029" target="_blank" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://twitter.com/truff_lazy?t=jbp7A_YA_lehGhDZcKhOCw&s=09" target="_blank" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.instagram.com/jolomi_t.e/" target="_blank" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </aside>
+        </div>
+    </aside>
   )
 }
 
