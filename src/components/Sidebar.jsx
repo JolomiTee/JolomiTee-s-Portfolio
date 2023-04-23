@@ -12,7 +12,7 @@ const Sidebar = () => {
             </figure>
             <div className="info-content">
                 <h1 className="name text-white-2 text-fs-2 font-fw-500 text-center" title="Jolomi Taiwo">Jolomi Taiwo E.</h1>
-                <p className="title text-white-1 bg-onyx text-fs-5 font-fw-300 w-full px-3 py-1 rounded-lg">Frontend Web Developer</p>
+                <p className="title text-white-1 bg-onyx text-fs-7 font-fw-300 w-full px-3 py-1 rounded-lg">Frontend Web Developer</p>
             </div>
 
             {/* <button

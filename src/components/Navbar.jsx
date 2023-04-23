@@ -8,7 +8,7 @@ const Navbar = () => {
         <ul className='navbar-list flex flex-wrap justify-center items-center py-1 px-3'>
             {
                 links.map((link, index) => (
-                    <li key={index} className='navbar-item text-light-gray text-fs-4 py-5 px-3 transition-1'>
+                    <li key={index} className='navbar-item text-light-gray text-fs-6 py-5 px-3 transition-1'>
                         <button className="navbar-link hover:text-light-gray-70 focus:text-light-gray-70">
                             {link}
                         </button>

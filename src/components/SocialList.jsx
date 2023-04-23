@@ -27,7 +27,7 @@ const SocialList = () => {
             info.items.map((items, index) =>
             (
                 <li key={index} className="social-item">
-                    <a href={items.href} target="_blank" title={items.title} className="social-link text-light-gray-70 text-fs-1 hover:text-light-gray">
+                    <a href={items.href} target="_blank" title={items.title} className="social-link text-light-gray-70 text-fs-2 hover:text-light-gray">
                         <ion-icon name={items.ion_icon}></ion-icon>
                     </a>
                 </li>
