@@ -3,16 +3,29 @@ import React from 'react';
 const info = {
     items: [
         {
+            ion_icon: "mail-outline",
+            contact_title: "Email",
+            attr: "mailto:taiwot2002@gmail.com",
+            value: "taiwot2002@gmail.com",
+        },
+        {
             ion_icon: "phone-portrait-outline",
             contact_title: "Phone",
             attr: "tel:+123 456 7890",
             value: "+234 906 160 3717",
         },
         {
-            ion_icon: "mail-outline",
-            contact_title: "Email",
-            attr: "mailto:taiwot2002@gmail.com",
-            value: "taiwot2002@gmail.com",
+            ion_icon: "calendar-outline",
+            contact_title: "Birthday",
+            element: "time",
+            datetime: "2002-03-04",
+            value: "March 4, 2002"
+        },
+        {
+            ion_icon: "location-outline",
+            contact_title: "Location",
+            element: "address",
+            value: "Kado Estate, Abuja, Nigeria"
         },
 
     ]
@@ -23,22 +36,28 @@ const Info = () => {
     <div>
         <ul className="contact-list grid columns-1 gap-[16px]">
             {
-                info.items.map(items => {
-                    const {ion_icon, contact_title, attr, value} = items
-                    return `
-                        <li className="contact-item">
-                            <div className="icon-box">
-                                <ion-icon name=${ion_icon}></ion-icon>
-                            </div>
-                            <div class="contact-info">
-                                <p class="contact-title">${contact_title}</p>
-                                <a href=${attr} class="contact-link">${value}</a>
-                            </div>
-
-
-                        </li>
-                    `
-                })
+                info.items.map((items, index) =>
+                (
+                    <li key={index} className="contact-item min-h-full flex items-center gap-4">
+                        <div className="icon-box">
+                            <ion-icon name={items.ion_icon}></ion-icon>
+                        </div>
+                        <div className="contact-info text-start">
+                            <p className="contact-title text-light-gray-70 text-fs-8 uppercase mb-[2px]">{items.contact_title}</p>
+                            {
+                                items.element === "time"
+                                ?
+                                <time dateTime={items.datetime} >{items.value}</time>
+                                :
+                                items.element === "address"
+                                ?
+                                <address>{items.value}</address>
+                                :
+                                <a href={items.attr} class="contact-link">{items.value}</a>
+                            }
+                        </div>
+                    </li>
+                ))
             }
 
 

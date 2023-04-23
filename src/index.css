@@ -50,15 +50,24 @@
     @apply w-full h-[1px] bg-jet my-4 mx-0;
 }
 .icon-box{
-    @apply relative bg-gradient-onyx w-[30px] h-[30px] rounded-lg flex justify-center items-center text-fs-4 text-orange-yellow-crayola shadow-1 z-[1];
+    @apply bg-gradient-onyx text-fs-4 text-orange-yellow-crayola relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 .icon-box::before{
     content: "";
+    position: absolute;
+    inset: 1px;
+    @apply bg-eerie-black-1;
     border-radius: inherit;
-    @apply absolute inset-[1px] bg-eerie-black-1 z-[1];
+    z-index: -1;
 }
 .icon-box ion-icon{  --ionicon-stroke-width: 35px; }
-
 article{ display: none; }
 
 article.active{
@@ -143,4 +152,7 @@ article.active{
     border-radius: inherit;
     @apply absolute inset-[1px] bg-gradient-jet z-[1];
 
+}
+.contact-info :is(.contact-link, time, address){
+    @apply text-fs-7 text-white-2
 }
