@@ -39,7 +39,7 @@
 
     html{ font-family: "Philosopher" }
 
-    body{ @apply bg-smoky-black}
+    body{ @apply bg-smoky-black min-w-[320px]}
 }
 
 /* REUSED STYLE */

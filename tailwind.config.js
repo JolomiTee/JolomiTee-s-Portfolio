@@ -50,6 +50,12 @@ export default {
             borderRadius: {
                 inherit: "inherit",
             },
+            backgroundColor: {
+                navbar: "hsla(240, 1%, 17%, 0.75)"
+            },
+            backdropBlur:{
+                navbar: "10px"
+            },
             backgroundImage: (theme) => ({
                 "gradient-onyx": `linear-gradient(
                     to bottom right,
@@ -78,7 +84,6 @@ export default {
                         hsl(45, 100%, 72%),
                         hsla(35, 100%, 68%)
                 )`,
-
             })
         },
     },
