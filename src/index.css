@@ -44,7 +44,7 @@
 
 /* REUSED STYLE */
 .sidebar, article{
-    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1];
+    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1] transition-2;
 }
 .separator{
     @apply w-full h-[1px] bg-jet my-4 mx-0;

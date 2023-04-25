@@ -53,7 +53,7 @@ const Info = () => {
                                 ?
                                 <address>{items.value}</address>
                                 :
-                                <a href={items.attr} class="contact-link">{items.value}</a>
+                                <a href={items.attr} className="contact-link">{items.value}</a>
                             }
                         </div>
                     </li>
