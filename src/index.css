@@ -68,10 +68,9 @@
     z-index: -1;
 }
 .icon-box ion-icon{  --ionicon-stroke-width: 35px; }
-article{ display: none; }
 
 article.active{
-    @apply block;
+    /* @apply block; */
     animation: fade 0.5s ease delay iteration-count backwards fill-mode;
 }
 @keyframes fade {
