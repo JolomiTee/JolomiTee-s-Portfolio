@@ -3,6 +3,7 @@ import Avatar1 from '../../assets/images/avatar-1.png'
 import Avatar2 from '../../assets/images/avatar-2.png'
 import Avatar3 from '../../assets/images/avatar-3.png'
 import Avatar4 from '../../assets/images/avatar-4.png'
+import TestimonialModal from './TestimonialModal'
 
 const info = [
     {
@@ -37,20 +38,20 @@ const Testimonial = () => {
 
         <h3 className="h3 testimonials-title mb-5">Testimonials</h3>
 
-        <ul className="testimonials-list flex justify-start items-center gap-[15px] my-0 mx-[-15px] pb-[35px]  has-scrollbar">
+        <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3  has-scrollbar">
             {
                 info.map((items, index) => (
-                    <li class="testimonials-item">
-                            <div class="content-card" data-testimonials-item>
+                    <li class="testimonials-item min-w-full snap-center">
+                            <div className="content-card" data-testimonials-item>
 
-                                <figure class="testimonials-avatar-box">
+                                <figure class="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
                                     <img src={items.img} alt={items.alt} width="60" data-testimonials-avatar />
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                <h4 class="h4 testimonials-item-title mb-3" data-testimonials-title>
                                     {items.name}
                                 </h4>
-                                <div class="testimonials-text" data-testimonials-text>
+                                <div class="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4" data-testimonials-text>
                                     <p>
                                         {items.text}
                                     </p>
@@ -61,6 +62,8 @@ const Testimonial = () => {
             }
 
         </ul>
+
+        <TestimonialModal />
 
     </section>
   )

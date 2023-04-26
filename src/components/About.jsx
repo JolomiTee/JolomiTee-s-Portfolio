@@ -1,6 +1,7 @@
 import React from 'react'
 import Services from './about/Services'
 import Testimonial from './about/Testimonial'
+import MyClients from './MyClients'
 
 const About = () => {
     return (
@@ -19,6 +20,8 @@ const About = () => {
             <Services />
 
             <Testimonial />
+
+            <MyClients />
 
 
 

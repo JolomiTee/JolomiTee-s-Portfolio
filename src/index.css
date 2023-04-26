@@ -154,6 +154,8 @@ article.active{
     @apply text-fs-7 text-white-2
 }
 
+.modal-container::-webkit-scrollbar{@apply hidden}
+
 
 /* Testimonials Section */
 .testimonials-list{
@@ -166,3 +168,5 @@ article.active{
     min-width: 100%;
     scroll-snap-align: center;
 }
+
+/* Testimonial Modal Container */

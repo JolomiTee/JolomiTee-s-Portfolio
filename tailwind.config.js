@@ -84,6 +84,7 @@ export default {
                         hsl(45, 100%, 72%),
                         hsla(35, 100%, 68%)
                 )`,
+                "overlay": `rgb(2, 1, 5)`,
             })
         },
     },
