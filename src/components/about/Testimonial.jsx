@@ -24,7 +24,7 @@ const info = [
         text: "Taiwo is a dynamic Web Developer, who is a bit of a shy workaholic. He shows a lot of passion and dedication to work and he has very strong communication skills. He shows great team spirit, and is a great team leader for executed projects. He is someone with a growth mindset and I highly recommend him."
     },
     {
-        img: Avatar3,
+        img: Avatar4,
         alt: 'Ogunya Marvelous',
         name: 'Ogunya Marvelous',
         text: "Taiwo is a dynamic Web Developer, who is a bit of a shy workaholic. He shows a lot of passion and dedication to work and he has very strong communication skills. He shows great team spirit, and is a great team leader for executed projects. He is someone with a growth mindset and I highly recommend him."
@@ -35,25 +35,24 @@ const Testimonial = () => {
   return (
     <section className="testimonials mb-10">
 
-        <h3 className="h3 testimonials-title">Testimonials</h3>
+        <h3 className="h3 testimonials-title mb-5">Testimonials</h3>
 
-        <ul className="testimonials-list has-scrollbar flex justify-start items-start gap-4 my-0 mx-4 py-6 px-4 overflow-x-auto scroll-smooth overscroll-x-contain snap-mandatory">
+        <ul className="testimonials-list flex justify-start items-center gap-[15px] my-0 mx-[-15px] pb-[35px]  has-scrollbar">
             {
-                info.map((item, index) => (
-                    <li key={index} className="testimonials-item min-w-full snap-center">
-                            <div className="content-card" data-testimonials-item>
+                info.map((items, index) => (
+                    <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
 
-                                <figure className="testimonials-avatar-box absolute top-[-25px] left-[-20px] transform translate-x-[15px] translate-y-[-25px] bg-gradient-onyx rounded-xl shadow-1">
-                                    <img src={item.img} alt={item.alt} width="60" />
+                                <figure class="testimonials-avatar-box">
+                                    <img src={items.img} alt={items.alt} width="60" data-testimonials-avatar />
                                 </figure>
 
-                                <h4 className="h4 testimonials-item-title mb-2" data-testimonials-title>
-                                    {item.name}
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                                    {items.name}
                                 </h4>
-                                <div
-                                className="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4 hidden" data-testimonials-text>
+                                <div class="testimonials-text" data-testimonials-text>
                                     <p>
-                                        {item.text}
+                                        {items.text}
                                     </p>
                                 </div>
                             </div>
@@ -61,8 +60,8 @@ const Testimonial = () => {
                 ))
             }
 
-
         </ul>
+
     </section>
   )
 }

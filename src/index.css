@@ -136,12 +136,10 @@ article.active{
     @apply rounded-[5px] bg-onyx;
 }
 .has-scrollbar::-webkit-scrollbar-thumb{
-    background: var(--orange-yellow-crayola);
-    border-radius: 5px;
+    @apply rounded-[5px] bg-orange-yellow-crayola
 }
 .has-scrollbar::-webkit-scrollbar-button{
-    /* background: var(--orange-yellow-crayola); */
-    @apply w-[20px] bg-orange-yellow-crayola;
+    @apply w-[20px];
 }
 .content-card{
     @apply relative bg-border-onyx p-[15px] pt-[45px] rounded-[14px] shadow-2 z-[1] cursor-pointer;
@@ -154,4 +152,17 @@ article.active{
 }
 .contact-info :is(.contact-link, time, address){
     @apply text-fs-7 text-white-2
+}
+
+
+/* Testimonials Section */
+.testimonials-list{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+.testimonials-item{
+    min-width: 100%;
+    scroll-snap-align: center;
 }
