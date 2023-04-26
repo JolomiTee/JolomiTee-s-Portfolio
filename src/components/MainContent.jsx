@@ -5,10 +5,8 @@ import Projects from './Projects'
 
 const MainContent = () => {
   return (
-    <div className='main-content'>
+    <div className='main-content mb-20'>
         <About />
-        <Resume />
-        <Projects />
     </div>
   )
 }

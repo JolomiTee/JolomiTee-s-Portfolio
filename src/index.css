@@ -87,7 +87,7 @@ article.active{
 .h5{@apply text-fs-5 font-fw-500;}
 
 .article-title{
-    @apply relative pb-2;
+    @apply relative pb-2 mb-2;
 }
 .article-title::after{
     content: "";
