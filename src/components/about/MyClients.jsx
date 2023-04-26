@@ -1,10 +1,7 @@
 import React from 'react'
-import GreenBarter from "../assets/images/Greenbarter.png"
-import Hubbab from "../assets/images/Hubbab Company.png"
-// import Zuri from "../assets/images/Zuri.png"
-// import SideHustle from "../assets/images/SideHustle.png"
-// import ALX from "../assets/images/ALX-Udacity.png"
-import Revinance from "../assets/images/Revinance.png"
+import GreenBarter from "../../assets/images/Greenbarter.png"
+import Hubbab from "../../assets/images/Hubbab Company.png"
+import Revinance from "../../assets/images/Revinance.png"
 
 const info = [
     {
@@ -40,6 +37,10 @@ const MyClients = () => {
                 ))
             }
         </ul>
+
+        <article className="text-white-1">
+            Next, you can check out my Resume
+        </article>
     </section>
   )
 }

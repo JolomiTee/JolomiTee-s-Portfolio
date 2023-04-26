@@ -41,7 +41,7 @@ const Testimonial = () => {
         <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3  has-scrollbar">
             {
                 info.map((items, index) => (
-                    <li class="testimonials-item min-w-full snap-center">
+                    <li key={index} class="testimonials-item min-w-full snap-center">
                             <div className="content-card" data-testimonials-item>
 
                                 <figure class="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">

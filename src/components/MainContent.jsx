@@ -6,7 +6,8 @@ import Projects from './Projects'
 const MainContent = () => {
   return (
     <div className='main-content mb-20'>
-        <About />
+        {/* <About /> */}
+        <Resume />
     </div>
   )
 }

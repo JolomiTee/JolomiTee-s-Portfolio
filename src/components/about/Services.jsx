@@ -7,12 +7,12 @@ const info = [
         img: DesignIcon,
         alt: 'Design icon',
         title: 'Web Design and Development',
-        text: 'I offer very modern and high-quality designs, made to your taste. Also I deliver with whatever frontend framework you need to be implemented with efficiency and packed with inborn ideas that will blow your clients away!',
+        text: 'I offer very modern and high-quality designs, made to your taste. Also I deliver with efficiency and packed with inborn ideas that will blow your clients away!',
     },
     {
         img: IconDev,
         alt: 'Development icon',
-        title: "Im also Freelance!!!",
+        title: "I'm also Freelance!!!",
         text: 'I am able to confidently offer my skills as a service to customers who require getting prototype designs turned into functional and responsive web pages, or require web pages designed from scratch.',
     }
 ]

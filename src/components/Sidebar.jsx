@@ -1,7 +1,7 @@
 import React from 'react'
 import ProfilePhoto from "../assets/images/ProfilePhoto.jpg"
-import Info from './Info'
-import SocialList from './SocialList'
+import Info from './about/Info'
+import SocialList from './about/SocialList'
 import { useState } from 'react'
 
 const Sidebar = () => {

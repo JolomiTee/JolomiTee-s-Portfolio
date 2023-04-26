@@ -24,7 +24,7 @@ const TestimonialModal = () => {
 
                     <h4 className="h3 modal-title mb-1" data-modal-title>Richmore Ibeh</h4>
 
-                    <time datetime="2022-05-01" className='text-6 text-light-gray-70 font-fw-300 mb-3'>1 May, 2022</time>
+                    <time dateTime="2022-05-01" className='text-6 text-light-gray-70 font-fw-300 mb-3'>1 May, 2022</time>
 
                     <div data-modal-text>
                         <p className='text-light-gray text-fs-6 font-fw-300 leading-1.6'>
