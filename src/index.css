@@ -87,7 +87,7 @@ article.active{
 .h5{@apply text-fs-5 font-fw-500;}
 
 .article-title{
-    @apply relative pb-2 mb-2;
+    @apply relative pb-2;
 }
 .article-title::after{
     content: "";
@@ -170,3 +170,16 @@ article.active{
 }
 
 /* Testimonial Modal Container */
+
+/* Resume */
+.timeline-item:not(:last-child){ margin-bottom: 30px;}
+.timeline-item:not(:last-child)::before{
+    content: "";
+    height: calc(100% + 50px);
+    @apply absolute top-[-25px] left-[-30px] w-[1px] bg-jet
+}
+.timeline-item::after{
+    content: '';
+    @apply absolute top-[5px] left-[-33px] w-[6px] h-[6px] bg-gradient-yellow rounded-full shadow-timeline
+
+}

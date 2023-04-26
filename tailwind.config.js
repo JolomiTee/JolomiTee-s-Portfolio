@@ -41,6 +41,7 @@ export default {
             "3": "0 16px 40px hsla(0, 0%, 0%, 0.25)",
             "4": "0 25px 50px hsla(0, 0%, 0%, 0.15)",
             "5": "0 24px 80px hsla(0, 0%, 0%, 0.25)",
+            "timeline": "0 0 0 4px #383838"
         },
         transitionProperty: {
             "1": "0.25s ease",
