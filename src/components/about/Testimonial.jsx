@@ -36,7 +36,7 @@ const Testimonial = () => {
   return (
     <section className="testimonials mb-10">
 
-        <h3 className="h3 testimonials-title mb-5">Testimonials</h3>
+        <h3 className="h3 testimonials-title mb-5 flex gap-1">People I<span className="lowercase">have worked with</span></h3>
 
         <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3  has-scrollbar">
             {
