@@ -154,7 +154,7 @@ const Resume = () => {
             <div className="title-wrapper flex items-center gap-4 mb-6">
 
                 <div className="icon-box">
-                    <ion-icon name="book-outline"></ion-icon>
+                    <ion-icon name="globe-outline"></ion-icon>
                 </div>
 
                 <h3 className="h3">Web Development Experience</h3>
