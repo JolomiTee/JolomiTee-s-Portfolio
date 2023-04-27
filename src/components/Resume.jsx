@@ -64,7 +64,47 @@ const info = [
             link: "",
             linkText: "",
         },
+    ],
+
+    [
+        {
+            name: "HTML",
+            link: "https://img.icons8.com/color/344/html-5--v1.png",
+        },
+        {
+            name: "CSS",
+            link: "https://img.icons8.com/color/344/css3.png"
+        },
+        {
+            name: "JavaScript",
+            link: "https://img.icons8.com/color/344/javascript--v1.png"
+        },
+        {
+            name: "Bootstrap",
+            link: "https://img.icons8.com/external-those-icons-flat-those-icons/344/external-Bootstrap-Logo-social-media-those-icons-flat-those-icons.png"
+        },
+        {
+            name: "TailwindCSS",
+            link: "https://codekitapp.com/images/help/free-tailwind-icon@2x.png"
+        },
+        {
+            name: "SCSS",
+            link: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png"
+        },
+        {
+            name: "React",
+            link: "https://img.icons8.com/ultraviolet/120/null/react--v1.png"
+        },
+        {
+            name: "Github",
+            link: "https://img.icons8.com/nolan/128/github.png"
+        },
+        {
+            name: "Visual Studio Code",
+            link: "https://img.icons8.com/color/96/null/visual-studio-code-2019.png"
+        },
     ]
+
 ]
 
 const Resume = () => {
@@ -72,7 +112,7 @@ const Resume = () => {
     <article className="resume" data-page="resume">
 
         <header>
-            <h2 className="h2 article-title mb-8">Resume</h2>
+            <h2 className="h2 article-title mb-8">My Timeline</h2>
         </header>
 
         <section className="timeline mb-8">
@@ -139,12 +179,30 @@ const Resume = () => {
 
             </ul>
 
-                <h1>Learning Web <span>Dev</span></h1>
 
 
 
         </section>
 
+        <section className="skill mb-8">
+            <h3 className="h3 mb-3">Tools of the Trade</h3>
+
+            <ul className="skills-list flex flex-wrap gap-3 justify-center items-center">
+                {
+                    info[2].map((items, index) => (
+                        <li key={index} className="skill-item">
+                            <img src={items.link} width="60" alt={items.name} />
+                        </li>
+                    ))
+                }
+            </ul>
+
+        </section>
+
+
+        <article className="text-white-1">
+            Next, you can check out my Projects
+        </article>
 
     </article>
   )
