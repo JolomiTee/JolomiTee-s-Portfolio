@@ -103,6 +103,10 @@ const info = [
             name: "Visual Studio Code",
             link: "https://img.icons8.com/color/96/null/visual-studio-code-2019.png"
         },
+        {
+            name: "Figma",
+            link: "https://img.icons8.com/color/144/null/figma--v1.png"
+        },
     ]
 
 ]
@@ -191,7 +195,7 @@ const Resume = () => {
                 {
                     info[2].map((items, index) => (
                         <li key={index} className="skill-item">
-                            <img src={items.link} width="60" alt={items.name} />
+                            <img src={items.link} width="50" alt={items.name} />
                         </li>
                     ))
                 }
