@@ -183,3 +183,25 @@ article.active{
     @apply absolute top-[5px] left-[-33px] w-[6px] h-[6px] bg-gradient-yellow rounded-full shadow-timeline
 
 }
+
+
+/* Projects */
+.project-item{
+    animation: scaleup .2s ease forwards;
+}
+
+@keyframes scaleup {
+    0% { transform: scale(.5);}
+    100%{ transform: scale(1);}
+}
+
+.project-item>a:hover .project-img::before{ background: hsla(0, 0%, 0%, .5);}
+
+.project-item-icon-box{
+
+}
+.project-item > a:hover .project-item-icon-box{
+    @apply scale-100 opacity-100
+}
+.project-item-icon-box ion-icon{ --ionicon-stroke-width: 50px}
+.project-item>a:hover img{ transform: scale(1.1);}
