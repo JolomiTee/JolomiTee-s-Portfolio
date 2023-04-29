@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 const info = [
     {
         school: "Federal University of Technology Akure",
@@ -203,11 +202,6 @@ const Resume = () => {
             </ul>
 
         </section>
-
-
-        <article className="text-white-1 flex gap-1">
-            Next, you can check out my <Link to='/projects' className='text-white-1 underline'>Projects</Link>
-        </article>
 
     </article>
   )

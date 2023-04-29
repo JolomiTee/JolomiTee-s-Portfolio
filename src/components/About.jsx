@@ -24,11 +24,6 @@ const About = () => {
 
             <MyClients />
 
-            <article className="text-white-1 flex gap-1">
-                Next, you can check out my <Link to='/resume' className='text-white-1 underline'>Resume</Link>
-            </article>
-
-
         </article>
     )
 }

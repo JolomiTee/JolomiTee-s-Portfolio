@@ -5,6 +5,13 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        screens: {
+            sm: '450px',
+            md: '580px',
+            lg: '760px',
+            xl: '1024px',
+            '2xl': '1250px'
+        },
         colors: {
             "jet": "#383838",
             "onyx": "#2b2b2c",

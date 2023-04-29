@@ -205,3 +205,38 @@ article.active{
 }
 .project-item-icon-box ion-icon{ --ionicon-stroke-width: 50px}
 .project-item>a:hover img{ transform: scale(1.1);}
+
+
+/* Media Queries */
+
+/* 450px screens */
+/* client */
+.client-item{ min-width: calc(33.33% - 10px);}
+.skills-list{
+    @apply sm:p-5
+}
+
+.skill-item img{
+    @apply sm:p-0 sm:justify-center
+}
+
+.skill-item:not(:last-child){
+    @apply sm:mb-4
+}
+
+
+/* 580px screens */
+.sidebar, article{
+    @apply md:w-[520px] md:m-auto md:p-7
+}
+.article-title{
+    @apply md:font-fw-600 md:pb-4
+}
+.article-title::after{
+    @apply md:w-10 md:h-1
+}
+
+.icon-box{
+    @apply md:w-12 md:h-12 md:rounded-xl md:text-fs-2
+}
+
