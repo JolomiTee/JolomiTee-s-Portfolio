@@ -2,8 +2,6 @@ import React from 'react'
 import GreenBarter from "../../assets/images/Greenbarter.png"
 import Hubbab from "../../assets/images/Hubbab Company.png"
 import Revinance from "../../assets/images/Revinance.png"
-import { Link } from 'react-router-dom'
-
 const info = [
     {
         link: "https://greenbarter.co",
@@ -39,9 +37,6 @@ const MyClients = () => {
             }
         </ul>
 
-        <article className="text-white-1 flex gap-1">
-            Next, you can check out my <Link to='/resume' className='text-white-1 underline'>Resume</Link>
-        </article>
     </section>
   )
 }

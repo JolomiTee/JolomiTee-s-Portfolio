@@ -2,6 +2,7 @@ import React from 'react'
 import Services from './about/Services'
 import Testimonial from './about/Testimonial'
 import MyClients from './about/MyClients'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -23,7 +24,9 @@ const About = () => {
 
             <MyClients />
 
-
+            <article className="text-white-1 flex gap-1">
+                Next, you can check out my <Link to='/resume' className='text-white-1 underline'>Resume</Link>
+            </article>
 
 
         </article>

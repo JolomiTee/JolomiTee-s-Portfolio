@@ -41,17 +41,17 @@ const Testimonial = () => {
         <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3  has-scrollbar">
             {
                 info.map((items, index) => (
-                    <li key={index} class="testimonials-item min-w-full snap-center">
+                    <li key={index} className="testimonials-item min-w-full snap-center">
                             <div className="content-card" data-testimonials-item>
 
-                                <figure class="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
+                                <figure className="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
                                     <img src={items.img} alt={items.alt} width="60" data-testimonials-avatar />
                                 </figure>
 
-                                <h4 class="h4 testimonials-item-title mb-3" data-testimonials-title>
+                                <h4 className="h4 testimonials-item-title mb-3" data-testimonials-title>
                                     {items.name}
                                 </h4>
-                                <div class="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4" data-testimonials-text>
+                                <div className="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4" data-testimonials-text>
                                     <p>
                                         {items.text}
                                     </p>

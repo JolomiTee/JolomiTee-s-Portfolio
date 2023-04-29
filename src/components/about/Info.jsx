@@ -59,53 +59,6 @@ const Info = () => {
                     </li>
                 ))
             }
-
-
-            {/* <li class="contact-item">
-
-                <div class="icon-box">
-                    <ion-icon name="mail-outline"></ion-icon>
-                </div>
-
-                <div class="contact-info">
-                    <p class="contact-title">Email</p>
-                    <a href="mailto:taiwot2002@gmail.com" class="contact-link">taiwot2002@gmail.com</a>
-                </div>
-
-            </li>
-
-            <li class="contact-item">
-                <div class="icon-box">
-                    <ion-icon name="phone-portrait-outline"></ion-icon>
-                </div>
-                <div class="contact-info">
-                    <p class="contact-title">Phone</p>
-                    <a href="tel:+123 456 7890" class="contact-link">+234 906 160 3717</a>
-                </div>
-            </li>
-
-            <li class="contact-item">
-                <div class="icon-box">
-                    <ion-icon name="calendar-outline"></ion-icon>
-                </div>
-                <div class="contact-info">
-                    <p class="contact-title">Birthday</p>
-                    <time datetime="2002-03-04">March 4, 2002</time>
-                </div>
-            </li>
-
-            <li class="contact-item">
-
-                <div class="icon-box">
-                    <ion-icon name="location-outline"></ion-icon>
-                </div>
-
-                <div class="contact-info">
-                    <p class="contact-title">Location</p>
-                    <address>Kado Estate, Abuja, Nigeria</address>
-                </div>
-
-            </li> */}
         </ul>
     </div>
   )
