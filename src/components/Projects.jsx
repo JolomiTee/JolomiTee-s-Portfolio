@@ -150,7 +150,7 @@ const projectList = projects.reverse()
 
 const Projects = () => {
   return (
-    <article className='portfolio'>
+    <>
         <header>
             <h2 className="h2 article-title mb-6">My Projects</h2>
         </header>
@@ -195,7 +195,7 @@ const Projects = () => {
             </ul>
         </section>
 
-    </article>
+    </>
   )
 }
 

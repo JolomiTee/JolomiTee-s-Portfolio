@@ -1,8 +1,6 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import React from 'react';
 import Home from './components/Home'
 import About from './components/About'
 import Resume from './components/Resume'
@@ -12,33 +10,31 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
-  return (
-    <div className="App mb-20 md:mt-[10px] md:mb-20">
+    return (
+        <div className="App mb-20 md:mt-[10px] md:mb-20 lg:relative lg:w-max lg:m-auto 2xl:max-w-[1200px] 2xl:min-w-[95%] 2xl:flex 2xl:justify-center 2xl:items-start 2xl:gap-6">
 
-        <BrowserRouter>
-        <ScrollToTop />
+            <BrowserRouter>
+                <ScrollToTop />
 
-            <Routes>
+                <Routes>
 
-                <Route path='/' element={<Home />}>
+                    <Route path='/' element={<Home />}>
 
-                    <Route index element={<About />} />
-                    <Route path='resume' element={<Resume />} />
+                        <Route index element={<About />} />
+                        <Route path='resume' element={<Resume />} />
+                        <Route path='projects' element={<Projects />} />
+                        <Route path='*' element={<Error />} />
 
-                    <Route path='projects' element={<Projects />} />
+                    </Route>
 
                     <Route path='*' element={<Error />} />
 
-                </Route>
+                </Routes>
 
-                <Route path='*' element={<Error />} />
+            </BrowserRouter>
 
-            </Routes>
-
-        </BrowserRouter>
-
-    </div>
-  )
+        </div>
+    )
 }
 
 export default App

@@ -2,11 +2,10 @@ import React from 'react'
 import Services from './about/Services'
 import Testimonial from './about/Testimonial'
 import MyClients from './about/MyClients'
-import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
-        <article>
+        <>
 
             <header>
                 <h2 className="h2 article-title">About Me</h2>
@@ -24,7 +23,7 @@ const About = () => {
 
             <Testimonial />
 
-        </article>
+        </>
     )
 }
 

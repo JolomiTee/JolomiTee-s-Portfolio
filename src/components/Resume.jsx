@@ -113,7 +113,7 @@ const info = [
 
 const Resume = () => {
   return (
-    <article className="resume" data-page="resume">
+    <>
 
         <header>
             <h2 className="h2 article-title mb-8">My Timeline</h2>
@@ -203,7 +203,7 @@ const Resume = () => {
 
         </section>
 
-    </article>
+    </>
   )
 }
 

@@ -34,7 +34,7 @@ const info = {
 const Info = () => {
   return (
     <div>
-        <ul className="contact-list grid columns-1 gap-[16px]">
+        <ul className="contact-list grid columns-1 gap-[16px] 2xl:grid 2xl:grid-cols-1">
             {
                 info.items.map((items, index) =>
                 (

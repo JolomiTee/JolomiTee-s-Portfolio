@@ -22,7 +22,7 @@ const info = {
 
 const SocialList = () => {
   return (
-    <ul className='social-list flex justify-start items-center gap-4 pb-1 ps-2'>
+    <ul className='social-list flex justify-start items-center gap-4 pb-1 ps-2 2xl:justify-center'>
         {
             info.items.map((items, index) =>
             (

@@ -21,7 +21,7 @@ const Services = () => {
     return (
         <section className="service mb-8">
             <h3 className="h3 service-title mb-5">What I'm Doing</h3>
-            <ul className="service-list grid grid-cols-1 gap-5">
+            <ul className="service-list grid grid-cols-1 gap-5 xl:grid-cols-2">
                 {
                     info.map((item, index) => (
                         <li key={index} className="service-item relative bg-gradient-onyx p-5 rounded-[14px] shadow-2 z-[1] before:absolute inset-[1px] before:bg-gradient-jet before:rounded-inherit before:z-[1] md:flex">
