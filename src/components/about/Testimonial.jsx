@@ -4,7 +4,7 @@ import Avatar2 from '../../assets/images/avatar-2.png'
 import Avatar3 from '../../assets/images/avatar-3.png'
 import Avatar4 from '../../assets/images/avatar-4.png'
 import TestimonialModal from './TestimonialModal'
-
+import { useState } from 'react'
 const info = [
     {
         img: Avatar1,
@@ -32,17 +32,26 @@ const info = [
     },
 ]
 
+
 const Testimonial = () => {
-  return (
-    <section className="testimonials mb-10">
+    const [openModal, setOpenModal] = useState(false)
 
-        <h3 className="h3 testimonials-title mb-5 flex gap-1 md:mb-6">People I<span className="lowercase">have worked with</span></h3>
+    const handleOpenModal = () => {
+        setOpenModal(true)
+    }
+    const handleCloseModal = () => {
+        setOpenModal(false)
+    }
+    return (
+        <section className="testimonials mb-10">
 
-        <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3 has-scrollbar md:gap-8 md:my-0 md:mx-[-25px]">
-            {
-                info.map((items, index) => (
-                    <li key={index} className="testimonials-item min-w-full snap-center">
-                            <div className="content-card md:p-8 md:pt-5" data-testimonials-item>
+            <h3 className="h3 testimonials-title mb-5 flex gap-1 md:mb-6">People I<span className="lowercase">have worked with</span></h3>
+
+            <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3 has-scrollbar md:gap-8 md:my-0 md:mx-[-25px]">
+                {
+                    info.map((items, index) => (
+                        <li key={index} className="testimonials-item min-w-full snap-center">
+                            <div className="content-card md:p-8 md:pt-5" onClick={handleOpenModal}>
 
                                 <figure className="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
                                     <img src={items.img} alt={items.alt} className='w-[60px] md:w-[80px]' data-testimonials-avatar />
@@ -57,16 +66,24 @@ const Testimonial = () => {
                                     </p>
                                 </div>
                             </div>
-                            <TestimonialModal img={items.img} alt={items.alt} title={items.name} text={items.text} />
+
+                            <TestimonialModal
+                                show={openModal}
+                                hide={handleCloseModal}
+                                img={items.img}
+                                alt={items.alt}
+                                name={items.name}
+                                text={items.text}
+                            />
                         </li>
-                ))
-            }
+                    ))
+                }
 
-        </ul>
+            </ul>
 
 
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Testimonial
