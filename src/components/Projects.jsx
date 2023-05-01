@@ -154,11 +154,9 @@ const Projects = () => {
         <header>
             <h2 className="h2 article-title mb-6">My Projects</h2>
         </header>
-        <article className="text-white-1 mb-6">
-            Projects are uploaded every now and then
-        </article>
 
         <section className="projects">
+
             <ul className="project-list flex justify-center flex-wrap gap-8 mb-3">
                 {
                     projectList.map((project, index) => (
@@ -187,7 +185,9 @@ const Projects = () => {
                                     }
                                 </div>
                             </a>
+                            <div className="separator md:my-6"></div>
                         </li>
+
                     ))
                 }
 
