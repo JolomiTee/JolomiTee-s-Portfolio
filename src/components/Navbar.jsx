@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className='navbar-list flex flex-wrap justify-center items-center py-1 px-3 md:gap-5 xl:gap-8'>
             {
                 links.map((link, index) => (
-                    <li key={index} className='navbar-item text-fs-7 py-5 px-3 transition-1'>
+                    <li key={index} className='navbar-item text-fs-7 py-3 px-3 transition-1'>
                         <NavLink
                             to={link.link}
                             className={({ isActive }) => (isActive ? 'text-orange-yellow-crayola' : 'navbar-link text-white-1 hover:text-light-gray-70 md:text-fs-6 lg:text-fs-5')}

@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <>
             <Sidebar />
-                <article className='xl:relative xl:min-w-full 2xl:min-w-[75%] 2xl:w-[750px] 2xl:m-0'>
+                <article className='xl:relative xl:min-w-full 2xl:min-w-[75%] 2xl:w-[750px] 2xl:m-0 2xl:mt-2'>
                     {!showNavbar && <Navbar />}
                     <Outlet />
                 </article>

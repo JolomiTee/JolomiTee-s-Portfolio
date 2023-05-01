@@ -1,6 +1,7 @@
 import React from 'react'
+import QuoteMark from '../../assets/icons/icon-quote.svg'
 
-const TestimonialModal = () => {
+const TestimonialModal = ({img, alt, title, text}) => {
     return (
         <div className={`modal-container fixed top-0 left-0 w-full h-full flex justify-center items-center overflow-y-auto overscroll-contain z-[20] pointer-events-none invisible md:p-5`} data-modal-container>
 
@@ -14,21 +15,21 @@ const TestimonialModal = () => {
 
                 <div className="modal-img-wrapper md:flex md:flex-col md:items-center">
                     <figure className="modal-avatar-box bg-gradient-onyx w-max rounded-[14px] mb-4 shadow-2 md:rounded-[18px] md:mb-0">
-                        <img src="../../assets/images/avatar-1.png" alt="Richmore Ibeh" className='md:w-16 lg:w-20' data-modal-img/>
+                        <img src={img} alt={alt} className='md:w-16 lg:w-20' data-modal-img/>
                     </figure>
 
-                    <img src="./assets/images/icon-quote.svg" className='hidden md:block md:grow md:w-9' alt="quote icon"/>
+                    <img src={QuoteMark} className='hidden md:block md:grow md:w-9' alt="quote icon"/>
                 </div>
 
                 <div className="modal-content">
 
-                    <h4 className="h3 modal-title mb-1" data-modal-title>Richmore Ibeh</h4>
+                    <h4 className="h3 modal-title mb-1" data-modal-title>{title}</h4>
 
                     <time dateTime="2022-05-01" className='text-6 text-light-gray-70 font-fw-300 mb-3'>1 May, 2022</time>
 
                     <div data-modal-text>
                         <p className='text-light-gray text-fs-6 font-fw-300 leading-1.6'>
-                            Taiwo was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            {text}
                         </p>
                     </div>
 

@@ -12,7 +12,11 @@ const Sidebar = () => {
 
     return (
         <aside
-            className={`sidebar mb-4 overflow-hidden transition-2 md:mb-[20px]  whitespace-nowrap 2xl:min-w-[25%] ${navOpen ? 'max-h-[660px]' : 'max-h-[112px]'} lg:shadow-5`}>
+            className={`
+            sidebar mb-4 overflow-hidden transition-2 md:mb-[20px]  whitespace-nowrap 2xl:min-w-[25%] lg:shadow-5
+            ${navOpen ? 'max-h-[660px]' : 'max-h-[112px]'}
+            ${!navOpen && 'md:max-h-[155px]'}
+            ${!navOpen && '2xl:max-h-full'}`}>
 
             <div className="sidebar-info relative flex justify-start items-center gap-[15px] md:gap-[25px] 2xl:flex-col">
 

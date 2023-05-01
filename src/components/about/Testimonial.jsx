@@ -57,13 +57,13 @@ const Testimonial = () => {
                                     </p>
                                 </div>
                             </div>
+                            <TestimonialModal img={items.img} alt={items.alt} title={items.name} text={items.text} />
                         </li>
                 ))
             }
 
         </ul>
 
-        <TestimonialModal />
 
     </section>
   )

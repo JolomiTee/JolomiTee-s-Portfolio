@@ -232,6 +232,9 @@ article.active{
         transform: translate(5px,-5px);
         border-radius: 20px;
     }
+    .h3{
+        @apply text-[20px]
+    }
 }
 
 @media (min-width: 760px){
