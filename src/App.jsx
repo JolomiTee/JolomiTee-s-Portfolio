@@ -13,7 +13,7 @@ import ScrollToTop from './components/ScrollToTop'
 function App() {
 
   return (
-    <div className="App mb-20 md:mt-[60px] md:mb-24">
+    <div className="App mb-20 md:mt-[10px] md:mb-20">
 
         <BrowserRouter>
         <ScrollToTop />

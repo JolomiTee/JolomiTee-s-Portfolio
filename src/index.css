@@ -44,13 +44,13 @@
 
 /* REUSED STYLE */
 .sidebar, article{
-    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1] transition-2;
+    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1] transition-2 md:w-[520px] md:m-auto md:p-7;
 }
 .separator{
     @apply w-full h-[1px] bg-jet my-4 mx-0;
 }
 .icon-box{
-    @apply bg-gradient-onyx text-fs-4 text-orange-yellow-crayola relative;
+    @apply bg-gradient-onyx text-fs-4 text-orange-yellow-crayola relative md:w-12 md:h-12 md:rounded-xl md:text-fs-2;
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -87,12 +87,12 @@ article.active{
 .h5{@apply text-fs-5 font-fw-500;}
 
 .article-title{
-    @apply relative pb-2 mb-6;
+    @apply relative pb-2 mb-6 md:font-fw-600 md:pb-4;
 }
 .article-title::after{
     content: "";
     animation: change ease 10s infinite;
-    @apply absolute bottom-0 left-0 w-[30px] h-[3px] bg-gradient-yellow rounded-[3px];
+    @apply absolute bottom-0 left-0 w-[30px] h-[3px] bg-gradient-yellow rounded-[3px] md:w-10 md:h-1;
 }
 @keyframes change {
     0% {
@@ -226,17 +226,10 @@ article.active{
 
 
 /* 580px screens */
-.sidebar, article{
-    @apply md:w-[520px] md:m-auto md:p-7
+@media (min-width: 580px){
+    .info-more-btn ion-icon{ display: none;}
+    .testimonials-avatar-box{
+        transform: translate(5px,-5px);
+        border-radius: 20px;
+    }
 }
-.article-title{
-    @apply md:font-fw-600 md:pb-4
-}
-.article-title::after{
-    @apply md:w-10 md:h-1
-}
-
-.icon-box{
-    @apply md:w-12 md:h-12 md:rounded-xl md:text-fs-2
-}
-

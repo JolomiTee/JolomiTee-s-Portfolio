@@ -36,22 +36,22 @@ const Testimonial = () => {
   return (
     <section className="testimonials mb-10">
 
-        <h3 className="h3 testimonials-title mb-5 flex gap-1">People I<span className="lowercase">have worked with</span></h3>
+        <h3 className="h3 testimonials-title mb-5 flex gap-1 md:mb-6">People I<span className="lowercase">have worked with</span></h3>
 
-        <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3  has-scrollbar">
+        <ul className="testimonials-list flex justify-start items-start gap-[15px] my-0 mx-[-15px] pb-[35px] pt-7 px-3 has-scrollbar md:gap-8 md:my-0 md:mx-[-25px]">
             {
                 info.map((items, index) => (
                     <li key={index} className="testimonials-item min-w-full snap-center">
-                            <div className="content-card" data-testimonials-item>
+                            <div className="content-card md:p-8 md:pt-5" data-testimonials-item>
 
                                 <figure className="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
-                                    <img src={items.img} alt={items.alt} width="60" data-testimonials-avatar />
+                                    <img src={items.img} alt={items.alt} className='w-[60px] md:w-[80px]' data-testimonials-avatar />
                                 </figure>
 
-                                <h4 className="h4 testimonials-item-title mb-3" data-testimonials-title>
+                                <h4 className="h4 testimonials-item-title mb-3 md:ml-24" data-testimonials-title>
                                     {items.name}
                                 </h4>
-                                <div className="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4" data-testimonials-text>
+                                <div className="testimonials-text text-light-gray text-fs-6 font-fw-300 leading-[1.6] line-clamp-4 md:line-clamp-2" data-testimonials-text>
                                     <p>
                                         {items.text}
                                     </p>
