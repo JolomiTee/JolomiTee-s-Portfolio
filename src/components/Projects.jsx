@@ -171,7 +171,7 @@ const Projects = () => {
                                         <ion-icon name="eye-outline"></ion-icon>
                                     </div>
 
-                                    <img src={project.img} alt={project.name} loading="lazy" className='w-full h-full object-cover transition-1'/>
+                                    <img src={project.img} alt={project.name} loading="lazy" className='w-full h-full object-cover lg:object-contain transition-1'/>
 
                                 </figure>
 
