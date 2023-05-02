@@ -1,8 +1,7 @@
 import React from 'react'
 import QuoteMark from '../../assets/icons/icon-quote.svg'
 
-const TestimonialModal = ({show, hide, img, alt, name, text}) => {
-
+const TestimonialModal = ({show, hide, content}) => {
     return (
         <div className={`modal-container fixed top-0 left-0 w-full h-full flex justify-center items-center overflow-y-auto overscroll-contain z-[20] pointer-events-none md:p-5 ${show ? 'visible' : 'invisible'}`} onClick={hide}>
 
@@ -16,7 +15,7 @@ const TestimonialModal = ({show, hide, img, alt, name, text}) => {
 
                 <div className="modal-img-wrapper md:flex md:flex-col md:items-center">
                     <figure className="modal-avatar-box bg-gradient-onyx w-max rounded-[14px] mb-4 shadow-2 md:rounded-[18px] md:mb-0">
-                        <img src={img} alt={alt} className='md:w-16 lg:w-20' data-modal-img/>
+                        <img src={content.img} alt={content.alt} className='md:w-16 lg:w-20' data-modal-img/>
                     </figure>
 
                     <img src={QuoteMark} className='hidden md:block md:grow md:w-9' alt="quote icon"/>
@@ -24,13 +23,13 @@ const TestimonialModal = ({show, hide, img, alt, name, text}) => {
 
                 <div className="modal-content">
 
-                    <h4 className="h3 modal-name mb-1" data-modal-name>{name}</h4>
+                    <h4 className="h3 modal-name mb-1" data-modal-name>{content.name}</h4>
 
                     <time dateTime="2022-05-01" className='text-6 text-light-gray-70 font-fw-300 mb-3'>Web Developer and designer</time>
 
                     <div data-modal-text>
                         <p className='text-light-gray text-fs-6 font-fw-300 leading-1.6'>
-                            {text}
+                            {content.text}
                         </p>
                     </div>
 

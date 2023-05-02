@@ -4,7 +4,7 @@ import Avatar2 from '../../assets/images/avatar-2.png'
 import Avatar3 from '../../assets/images/avatar-3.png'
 import Avatar4 from '../../assets/images/avatar-4.png'
 import TestimonialModal from './TestimonialModal'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 const info = [
     {
         img: Avatar1,
@@ -35,13 +35,20 @@ const info = [
 
 const Testimonial = () => {
     const [openModal, setOpenModal] = useState(false)
+    const [modalContent, setModalContent] = useState([])
 
-    const handleOpenModal = () => {
+    const handleOpenModal = (items) => {
         setOpenModal(true)
+        changeModalContent(items)
     }
     const handleCloseModal = () => {
         setOpenModal(false)
     }
+    const changeModalContent = (items) => {
+        setModalContent(items)
+    }
+
+
     return (
         <section className="testimonials mb-10">
 
@@ -51,7 +58,7 @@ const Testimonial = () => {
                 {
                     info.map((items, index) => (
                         <li key={index} className="testimonials-item min-w-full snap-center">
-                            <div className="content-card md:p-8 md:pt-5" onClick={handleOpenModal}>
+                            <div className="content-card md:p-8 md:pt-5" onClick={() => handleOpenModal(items)}>
 
                                 <figure className="testimonials-avatar-box bg-gradient-onyx rounded-[14px] shadow-1 absolute top-[-25px] left-5">
                                     <img src={items.img} alt={items.alt} className='w-[60px] md:w-[80px]' data-testimonials-avatar />
@@ -66,14 +73,12 @@ const Testimonial = () => {
                                     </p>
                                 </div>
                             </div>
+                            {/* {console.log(modalContent)} */}
 
                             <TestimonialModal
                                 show={openModal}
                                 hide={handleCloseModal}
-                                img={items.img}
-                                alt={items.alt}
-                                name={items.name}
-                                text={items.text}
+                                content={modalContent}
                             />
                         </li>
                     ))
