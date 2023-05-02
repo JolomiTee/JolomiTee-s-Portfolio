@@ -82,8 +82,8 @@ const projects = [
         responsive: true,
     },
     {
-        name: "CatchUp Landing Page",
-        link: "",
+        name: "React Weather App",
+        link: "https://weather-app-jolomitee.vercel.app/",
         img: Project10,
         category: "react, weather-api, geolocation-api",
         responsive: true,
@@ -104,7 +104,7 @@ const projects = [
     },
     {
         name: "Advent Of CSS",
-        link: "https://mui-sage.vercel.app/",
+        link: "https://advent-of-css-tau.vercel.app/",
         img: Project13,
         category: "advent-of-css, 24-challenges, CSS ",
         responsive: true,
@@ -125,7 +125,7 @@ const projects = [
     },
     {
         name: "Portfolio Design",
-        link: "",
+        link: "https://trial-react-portfolio.vercel.app/",
         img: Project16,
         category: "react, tailwindcss, portfolio page",
         responsive: true,
