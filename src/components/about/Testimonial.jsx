@@ -6,12 +6,7 @@ import Avatar4 from '../../assets/images/avatar-4.png'
 import TestimonialModal from './TestimonialModal'
 import { useState, useEffect } from 'react'
 
-const avatars=[
-    {
-        Avatar1,
-        Avatar2
-    }
-]
+
 const info = [
     {
         img: Avatar1,
