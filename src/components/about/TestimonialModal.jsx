@@ -24,8 +24,8 @@ const TestimonialModal = ({show, hide, content}) => {
                 <div className="modal-content">
 
                     <h4 className="h3 modal-name mb-1" data-modal-name>{content.name}</h4>
+                    <p className='text-light-gray-70 font-fw-300 mb-3'>{content.role}</p>
 
-                    <time dateTime="2022-05-01" className='text-6 text-light-gray-70 font-fw-300 mb-3'>Web Developer and designer</time>
 
                     <div data-modal-text>
                         <p className='text-light-gray text-fs-6 font-fw-300 leading-1.6'>

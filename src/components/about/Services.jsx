@@ -29,8 +29,8 @@ const Services = () => {
                                 <img src={item.img} alt={item.alt} className='m-auto md:m-0' />
                             </div>
                             <div className="service-content-box text-center md:text-start">
-                                <h4 className="h4 service-item-title mb-2">{item.title}</h4>
-                                <p className="service-item-text text-light-gray text-fs-6 font-fw-300 leading-[1.6]">{item.text}
+                                <h4 className="h4 service-item-title mb-2 lg:text-fs-2">{item.title}</h4>
+                                <p className="service-item-text text-light-gray text-fs-6 lg:text-fs-4 font-fw-300 leading-[1.6]">{item.text}
                                 </p>
                             </div>
                         </li>
