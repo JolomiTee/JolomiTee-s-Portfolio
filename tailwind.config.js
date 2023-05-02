@@ -25,6 +25,7 @@ export default {
             "light-gray": "hsl(0, 0%, 84%)",
             "light-gray-70": "hsl(0, 0%, 84%, 0.7)",
             "bittersweet-shimmer": "hsl(0, 43%, 51%)",
+            "overlay": "rgb(2, 1, 5)"
         },
         fontSize: {
             "fs-1": "24px",
@@ -92,7 +93,6 @@ export default {
                         hsl(45, 100%, 72%),
                         hsla(35, 100%, 68%)
                 )`,
-                "overlay": `rgb(2, 1, 5)`,
             })
         },
     },

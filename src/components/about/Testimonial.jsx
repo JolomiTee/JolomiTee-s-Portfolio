@@ -73,16 +73,16 @@ const Testimonial = () => {
                                     </p>
                                 </div>
                             </div>
-                            {/* {console.log(modalContent)} */}
 
-                            <TestimonialModal
-                                show={openModal}
-                                hide={handleCloseModal}
-                                content={modalContent}
-                            />
                         </li>
                     ))
                 }
+
+                <TestimonialModal
+                    show={openModal}
+                    hide={handleCloseModal}
+                    content={modalContent}
+                />
 
             </ul>
 
