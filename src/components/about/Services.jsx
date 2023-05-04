@@ -7,13 +7,14 @@ const info = [
         img: IconDev,
         alt: 'Design icon',
         title: 'Web Design and Development',
-        text: 'I offer very modern and high-quality designs, made to your taste. Also I deliver with efficiency and packed with inborn ideas that will blow your clients away!',
+        text: 'I have Internship and Real world working experience of Frontend Web Development technologies and building functional and dynamic websites that meet modern web development standards. I am also able to work and integrate smoothly into a development team to ensure building a high quality web product.',
+
     },
     {
         img: DesignIcon,
         alt: 'Development icon',
         title: "I'm also Freelance!!!",
-        text: 'I am able to confidently offer my skills as a service to customers who require getting prototype designs turned into functional and responsive web pages, or require web pages designed from scratch.',
+        text: 'I am able to confidently offer my skills as a service to clients or businesses that require creating pixel perfect webpages from design prototypes, while also making their interfaces highly responsive and useable by all kinds of people. Whether its a landing page or a web app interface... I\'m sure to deliver!',
     }
 ]
 

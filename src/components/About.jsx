@@ -13,7 +13,7 @@ const About = () => {
 
             <section className="about-text text-light-gray text-fs-6 font-fw-300 leading-[1.6]">
                 <p className='mb-4 md:mb-6 lg:text-fs-4'>
-                    A guy interested in the subtle art of transforming and translating designs to working, multifunctional and amazing websites by sitting in front of a screen all day long... clacking at a an RGB keyboard with a long key travel distance.
+                    A guy interested in the subtle art of transforming and translating designs to working, multifunctional and amazing websites. I am able to do this by sitting in front of a screen all day long... typing away with an RGB keyboard with a long key travel distance.
                 </p>
             </section>
 
@@ -21,7 +21,7 @@ const About = () => {
 
             <MyClients />
 
-            <Testimonial />
+            {/* <Testimonial /> */}
 
         </>
     )
