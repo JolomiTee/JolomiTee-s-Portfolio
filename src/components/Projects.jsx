@@ -15,6 +15,7 @@ import Project13 from "../assets/images/ProjectImg/Project13.png";
 import Project14 from "../assets/images/ProjectImg/Project14.png";
 import Project15 from "../assets/images/ProjectImg/Project15.png";
 import Project16 from "../assets/images/ProjectImg/Project16.png";
+import Project17 from "../assets/images/ProjectImg/Project17.png";
 
 
 const projects = [
@@ -128,6 +129,13 @@ const projects = [
         link: "https://trial-react-portfolio.vercel.app/",
         img: Project16,
         category: "react, tailwindcss, portfolio page",
+        responsive: true,
+    },
+    {
+        name: "Youtube Clone",
+        link: "https://jsm-youtube-clone.netlify.app/",
+        img: Project17,
+        category: "react, material ui, site clone",
         responsive: true,
     },
     // {
