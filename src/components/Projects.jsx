@@ -16,6 +16,7 @@ import Project14 from "../assets/images/ProjectImg/Project14.png";
 import Project15 from "../assets/images/ProjectImg/Project15.png";
 import Project16 from "../assets/images/ProjectImg/Project16.png";
 import Project17 from "../assets/images/ProjectImg/Project17.png";
+import Project18 from "../assets/images/ProjectImg/Project18.png";
 
 
 const projects = [
@@ -136,6 +137,13 @@ const projects = [
         link: "https://jsm-youtube-clone.netlify.app/",
         img: Project17,
         category: "react, material ui, site clone",
+        responsive: true,
+    },
+    {
+        name: "Admin Dashboard",
+        link: "https://syncfusion-admin-dashboard.vercel.app/",
+        img: Project18,
+        category: "react, syncfusion, dashboard, charts, tables",
         responsive: true,
     },
     // {
