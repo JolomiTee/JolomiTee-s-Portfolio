@@ -38,7 +38,7 @@ const projects = [
         name: "Sign Up Page",
         link: "https://jolomitee.github.io/Zuri-Projects/",
         img: Project3,
-        category: "zuri, task",
+        category: "zuri, task, signup page",
         responsive: true,
     },
     {
