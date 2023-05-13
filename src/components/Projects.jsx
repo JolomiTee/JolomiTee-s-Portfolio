@@ -16,7 +16,7 @@ import Project14 from "../assets/images/ProjectImg/Project14.png";
 import Project15 from "../assets/images/ProjectImg/Project15.png";
 import Project16 from "../assets/images/ProjectImg/Project16.png";
 import Project17 from "../assets/images/ProjectImg/Project17.png";
-import Project18 from "../assets/images/ProjectImg/Project18.png";
+import Project18 from "../assets//images/ProjectImg/Project18.png";
 
 
 const projects = [
