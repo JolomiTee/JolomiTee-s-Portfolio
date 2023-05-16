@@ -87,6 +87,10 @@ const info = [
             link: "https://img.icons8.com/color/344/javascript--v1.png"
         },
         {
+            name: "Typescript",
+            link: "https://img.icons8.com/color/144/typescript.png"
+        },
+        {
             name: "Bootstrap",
             link: "https://img.icons8.com/external-those-icons-flat-those-icons/344/external-Bootstrap-Logo-social-media-those-icons-flat-those-icons.png"
         },
