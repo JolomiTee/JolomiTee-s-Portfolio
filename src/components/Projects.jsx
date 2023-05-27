@@ -149,7 +149,7 @@ const projects = [
     },
     {
         name: "Dashboard Variants",
-        link: "https://syncfusion-admin-dashboard.vercel.app/",
+        link: "https://dashboardvariants.vercel.app/",
         img: Project19,
         category: "react, dashboard,template, wallet",
         responsive: true,
