@@ -17,6 +17,7 @@ import Project15 from "../assets/images/ProjectImg/Project15.png";
 import Project16 from "../assets/images/ProjectImg/Project16.png";
 import Project17 from "../assets/images/ProjectImg/Project17.png";
 import Project18 from "../assets/images/ProjectImg/Project18.png";
+import Project19 from "../assets/images/ProjectImg/Project19.png";
 
 
 const projects = [
@@ -144,6 +145,13 @@ const projects = [
         link: "https://syncfusion-admin-dashboard.vercel.app/",
         img: Project18,
         category: "react, syncfusion, dashboard, charts, tables",
+        responsive: true,
+    },
+    {
+        name: "Dashboard Variants",
+        link: "https://syncfusion-admin-dashboard.vercel.app/",
+        img: Project19,
+        category: "react, dashboard,template, wallet",
         responsive: true,
     },
     // {
