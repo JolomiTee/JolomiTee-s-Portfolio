@@ -9,6 +9,13 @@ const info = [
 
     [
         {
+            devExperience: "A Hospital Management System",
+            duration: "May 2023 - September 2023",
+            text: "I collaborated with both Backend and Frontend developers to create a powerful and functional Hospital Management System. It's features include keeping track of patient data, purchases and billings, inventory items, booking of apointments, and general digital storage and handling of data pertaining to activities carried out in a hospital establishment. It is a database backed application with a large number of API integrations that allow for seamless creation, retrieval, updating and deletion of hospital data.",
+            link: "",
+            linkText: "",
+        },
+        {
             devExperience: "Greenbarter Currency Exchange Frontend Development Team Lead",
             duration: "March 2023 - Present",
             text: "I am the Frontend Development Team Lead for the Fintech Startup called Greenbarter, where I am responsible for building the Web application's Frontend user interface and implementing good user experience.",
@@ -87,10 +94,6 @@ const info = [
             link: "https://img.icons8.com/color/344/javascript--v1.png"
         },
         {
-            name: "Typescript",
-            link: "https://img.icons8.com/color/144/typescript.png"
-        },
-        {
             name: "Bootstrap",
             link: "https://img.icons8.com/external-those-icons-flat-those-icons/344/external-Bootstrap-Logo-social-media-those-icons-flat-those-icons.png"
         },
@@ -101,6 +104,10 @@ const info = [
         {
             name: "SCSS",
             link: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png"
+        },
+        {
+            name: "Material UI",
+            link: "https://img.icons8.com/color/480/material-ui.png"
         },
         {
             name: "React",
@@ -118,104 +125,137 @@ const info = [
             name: "Figma",
             link: "https://img.icons8.com/color/144/null/figma--v1.png"
         },
+
+
+        // supplementary
+        // {
+        //     name: "Typescript",
+        //     link: "https://img.icons8.com/color/144/typescript.png"
+        // },
+        // {
+        //     name: "Next JS",
+        //     link: "https://img.icons8.com/fluency/400/nextjs.png"
+        // },
+        // {
+        //     name: "NodeJS",
+        //     link: "https://img.icons8.com/color/480/nodejs.png"
+        // },
+        // {
+        //     name: "Express JS",
+        //     link: "https://img.icons8.com/nolan/512/express-js.png"
+        // },
+        // {
+        //     name: "Postgres",
+        //     link: "https://img.icons8.com/color/480/postgreesql.png"
+        // },
+        // {
+        //     name: "SQL",
+        //     link: "https://img.icons8.com/color/480/mysql-logo.png"
+        // },
+
     ]
 
 ]
 
 const Resume = () => {
-  return (
-    <>
+    return (
+        <>
 
-        <header>
-            <h2 className="h2 article-title mb-8">My Timeline</h2>
-        </header>
+            <header>
+                <h2 className="h2 article-title mb-8">My Timeline</h2>
+            </header>
 
-        <section className="timeline mb-8">
+            <section className="timeline mb-8">
 
-            <div className="title-wrapper flex items-center gap-4 mb-6">
+                <div className="title-wrapper flex items-center gap-4 mb-6">
 
-                <div className="icon-box">
-                    <ion-icon name="book-outline"></ion-icon>
+                    <div className="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 className="h3">Formal Education</h3>
+
                 </div>
 
-                <h3 className="h3">Formal Education</h3>
+                <ul className="timeline-list text-fs-6 ml-11">
 
-            </div>
+                    <li className="timeline-item relative">
 
-            <ul className="timeline-list text-fs-6 ml-11">
+                        <h4 className="h4 timelime-item-title text-fs-6 leading-[1.3] mb-2">
+                            Federal University of Technology Akure
+                        </h4>
 
-                <li className="timeline-item relative">
+                        <span className='text-vegas-gold font-fw-400 leading-[1.6]'>2017 — Present</span>
 
-                    <h4 className="h4 timelime-item-title text-fs-6 leading-[1.3] mb-2">
-                        Federal University of Technology Akure
-                    </h4>
+                        <p className="timeline-text text-light-gray font-fw-300 leading-[1.6]">
+                            I am a student of Biotechnology Department. I have had basic Microbiology, Biochemistry, Crop Science and Production knowledge. I am yet to graduate.
+                        </p>
+                    </li>
 
-                    <span className='text-vegas-gold font-fw-400 leading-[1.6]'>2017 — Present</span>
+                </ul>
+            </section>
 
-                    <p className="timeline-text text-light-gray font-fw-300 leading-[1.6]">
-                        I am a student of Biotechnology Department. I have had basic Microbiology, Biochemistry, Crop Science and Production knowledge. I am yet to graduate.
-                    </p>
-                </li>
+            <section className="timeline mb-8">
 
-            </ul>
-        </section>
+                <div className="title-wrapper flex items-center gap-4 mb-6">
 
-        <section className="timeline mb-8">
+                    <div className="icon-box">
+                        <ion-icon name="globe-outline"></ion-icon>
+                    </div>
 
-            <div className="title-wrapper flex items-center gap-4 mb-6">
+                    <h3 className="h3">Web Development Experience</h3>
 
-                <div className="icon-box">
-                    <ion-icon name="globe-outline"></ion-icon>
                 </div>
 
-                <h3 className="h3">Web Development Experience</h3>
+                <ul className="timeline-list text-fs-6 ml-11">
+                    {
+                        info[1].map((items, index) => (
+                            <li key={index} className="timeline-item relative">
 
-            </div>
+                                <h4 className="h4 timelime-item-title text-fs-6 leading-[1.3] mb-2">
+                                    {items.devExperience}
+                                </h4>
 
-            <ul className="timeline-list text-fs-6 ml-11">
-                {
-                    info[1].map((items, index) => (
-                        <li key={index} className="timeline-item relative">
+                                <span className='text-vegas-gold font-fw-400 leading-[1.6]'>{items.duration}</span>
 
-                            <h4 className="h4 timelime-item-title text-fs-6 leading-[1.3] mb-2">
-                                {items.devExperience}
-                            </h4>
-
-                            <span className='text-vegas-gold font-fw-400 leading-[1.6]'>{items.duration}</span>
-
-                            <p className="timeline-text text-light-gray font-fw-300 leading-[1.6]">{items.text}
-                                <a target="_blank" href={items.link}>{items.linkText}</a>
-                            </p>
-                        </li>
-                    ))
-                }
-
-
-
-            </ul>
+                                <p className="timeline-text text-light-gray font-fw-300 leading-[1.6]">
+                                    {items.text}
+                                    <a target="_blank"
+                                        href={items.link}
+                                    >
+                                        {items.linkText}
+                                    </a>
+                                </p>
+                            </li>
+                        ))
+                    }
 
 
 
+                </ul>
 
-        </section>
 
-        <section className="skill mb-8">
-            <h3 className="h3 mb-3">Tools of the Trade</h3>
 
-            <ul className="skills-list flex flex-wrap gap-3 justify-center items-center">
-                {
-                    info[2].map((items, index) => (
-                        <li key={index} className="skill-item">
-                            <img src={items.link} width="50" alt={items.name} />
-                        </li>
-                    ))
-                }
-            </ul>
 
-        </section>
+            </section>
 
-    </>
-  )
+            <section className="skill mb-8">
+                <h3 className="h3 mb-3">Tools of the Trade</h3>
+
+                <ul className="skills-list flex flex-wrap gap-3 justify-center items-center">
+                    {
+                        info[2].map((items, index) => (
+                            <li key={index} className="skill-item">
+                                <img src={items.link} width="60" alt={items.name} />
+                            </li>
+                        ))
+                    }
+                </ul>
+
+            </section>
+
+        </>
+    )
 }
 
 export default Resume
