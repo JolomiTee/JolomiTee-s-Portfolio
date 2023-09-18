@@ -5,7 +5,7 @@ const info = {
         {
             ion_icon: "mail-outline",
             contact_title: "Email",
-            attr: "mailto:taiwot2002@gmail.com",
+            attr: "mailto:jolomitee@gmail.com",
             value: "taiwot2002@gmail.com",
         },
         {
@@ -19,7 +19,7 @@ const info = {
             contact_title: "Birthday",
             element: "time",
             datetime: "2002-03-04",
-            value: "March 4, 2002"
+            value: "March 4<sup>th</>"
         },
         {
             ion_icon: "location-outline",
