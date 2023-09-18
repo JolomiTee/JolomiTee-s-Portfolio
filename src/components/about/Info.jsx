@@ -19,7 +19,7 @@ const info = {
             contact_title: "Birthday",
             element: "time",
             datetime: "2002-03-04",
-            value: "March 4<sup>th<sup/>"
+            value: "March 4th"
         },
         {
             ion_icon: "location-outline",
