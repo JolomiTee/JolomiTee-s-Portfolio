@@ -156,17 +156,10 @@ const projects = [
         responsive: true,
     },
     {
-        name: "Dashboard Variants",
-        link: "https://dashboardvariants.vercel.app/",
-        img: Project19,
-        category: "react, dashboard, template, wallet",
-        responsive: true,
-    },
-    {
         name: "GetLinked Hackathon UI Challenge",
         link: "https://dashboardvariants.vercel.app/",
         img: Project20,
-        category: "react, landing-page, UI Challenge ",
+        category: "react, landing-page, UI Challenge, transitions ",
         responsive: true,
     },
     // {
