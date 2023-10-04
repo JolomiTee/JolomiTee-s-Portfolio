@@ -18,6 +18,7 @@ import Project16 from "../assets/images/ProjectImg/Project16.png";
 import Project17 from "../assets/images/ProjectImg/Project17.png";
 import Project18 from "../assets/images/ProjectImg/Project18.png";
 import Project19 from "../assets/images/ProjectImg/Project19.png";
+import Project20 from "../assets/images/ProjectImg/Project20.jpg";
 
 
 const projects = [
@@ -151,7 +152,21 @@ const projects = [
         name: "Dashboard Variants",
         link: "https://dashboardvariants.vercel.app/",
         img: Project19,
-        category: "react, dashboard,template, wallet",
+        category: "react, dashboard, template, wallet",
+        responsive: true,
+    },
+    {
+        name: "Dashboard Variants",
+        link: "https://dashboardvariants.vercel.app/",
+        img: Project19,
+        category: "react, dashboard, template, wallet",
+        responsive: true,
+    },
+    {
+        name: "GetLinked Hackathon UI Challenge",
+        link: "https://dashboardvariants.vercel.app/",
+        img: Project20,
+        category: "react, landing-page, UI Challenge ",
         responsive: true,
     },
     // {
