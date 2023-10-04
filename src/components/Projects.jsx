@@ -157,7 +157,7 @@ const projects = [
     },
     {
         name: "GetLinked Hackathon UI Challenge",
-        link: "https://dashboardvariants.vercel.app/",
+        link: "https://getlinked-ui-challenge.vercel.app/",
         img: Project20,
         category: "react, landing-page, UI Challenge, transitions ",
         responsive: true,
