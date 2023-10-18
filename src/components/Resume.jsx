@@ -114,6 +114,10 @@ const info = [
             link: "https://img.icons8.com/ultraviolet/120/null/react--v1.png"
         },
         {
+            name: "Next JS",
+            link: "https://img.icons8.com/fluency/400/nextjs.png"
+        },
+        {
             name: "Github",
             link: "https://img.icons8.com/nolan/128/github.png"
         },
@@ -131,10 +135,6 @@ const info = [
         // {
         //     name: "Typescript",
         //     link: "https://img.icons8.com/color/144/typescript.png"
-        // },
-        // {
-        //     name: "Next JS",
-        //     link: "https://img.icons8.com/fluency/400/nextjs.png"
         // },
         // {
         //     name: "NodeJS",
