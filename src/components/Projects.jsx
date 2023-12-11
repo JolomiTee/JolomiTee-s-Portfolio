@@ -20,7 +20,7 @@ import Project18 from "../assets/images/ProjectImg/Project18.png";
 import Project19 from "../assets/images/ProjectImg/Project19.png";
 import Project20 from "../assets/images/ProjectImg/Project20.jpg";
 import Project21 from "../assets/images/ProjectImg/Project21.png";
-
+import Project23 from "../assets/images/ProjectImg/Project23.png";
 
 const projects = [
     {
@@ -168,6 +168,13 @@ const projects = [
         link: "https://promptopia-jolomitee.vercel.app/",
         img: Project21,
         category: "NextJS, TailwindCSS, CRUD, Auth ",
+        responsive: true,
+    },
+    {
+        name: "Zepama",
+        link: "https://zepama.com",
+        img: Project23,
+        category: "Landing Page, NextJS",
         responsive: true,
     },
     // {
