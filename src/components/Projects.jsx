@@ -20,7 +20,8 @@ import Project18 from "../assets/images/ProjectImg/Project18.png";
 import Project19 from "../assets/images/ProjectImg/Project19.png";
 import Project20 from "../assets/images/ProjectImg/Project20.jpg";
 import Project21 from "../assets/images/ProjectImg/Project21.png";
-import Project23 from "../assets/images/ProjectImg/Project23.png"; import Project24 from "../assets/images/ProjectImg/Project24.png";
+import Project23 from "../assets/images/ProjectImg/Project23.png";
+import Project24 from "../assets/images/ProjectImg/Project24.png";
 import Project25 from "../assets/images/ProjectImg/Project25.png";
 
 const projects = [

@@ -10,31 +10,31 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
-    return (
-        <div className="App mb-16 md:mt-[10px] md:mb-20 lg:relative lg:w-max lg:m-auto lg:mb-[70px] 2xl:max-w-[1200px] 2xl:min-w-[95%] 2xl:flex 2xl:justify-center 2xl:items-start 2xl:gap-6">
+   return (
+      <div className="App mb-16 md:mt-[10px] md:mb-20 lg:relative lg:w-max lg:m-auto lg:mb-[70px] 2xl:max-w-[1200px] 2xl:min-w-[95%] 2xl:flex 2xl:justify-center 2xl:items-start 2xl:gap-6">
 
-            <BrowserRouter>
-                <ScrollToTop />
+         <BrowserRouter>
+            <ScrollToTop />
 
-                <Routes>
+            <Routes>
 
-                    <Route path='/' element={<Home />}>
+               <Route path='/' element={<Home />}>
 
-                        <Route index element={<About />} />
-                        <Route path='resume' element={<Resume />} />
-                        <Route path='projects' element={<Projects />} />
-                        <Route path='*' element={<Error />} />
+                  <Route index element={<About />} />
+                  <Route path='resume' element={<Resume />} />
+                  <Route path='projects' element={<Projects />} />
+                  <Route path='*' element={<Error />} />
 
-                    </Route>
+               </Route>
 
-                    <Route path='*' element={<Error />} />
+               <Route path='*' element={<Error />} />
 
-                </Routes>
+            </Routes>
 
-            </BrowserRouter>
+         </BrowserRouter>
 
-        </div>
-    )
+      </div>
+   )
 }
 
 export default App
