@@ -25,7 +25,7 @@ const info = {
          ion_icon: "location-outline",
          contact_title: "Location",
          element: "address",
-         value: "Kado Estate, Abuja, Nigeria"
+         value: "Abuja, Nigeria"
       },
 
    ]
