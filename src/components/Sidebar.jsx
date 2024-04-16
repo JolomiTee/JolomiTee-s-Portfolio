@@ -1,4 +1,3 @@
-import React from 'react'
 import ProfilePhoto from "../assets/images/newprofile.jpg"
 import Info from './about/Info'
 import SocialList from './about/SocialList'

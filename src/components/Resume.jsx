@@ -1,9 +1,8 @@
-import React from 'react'
 const info = [
    {
       school: "Federal University of Technology Akure",
-      startDate: "2017",
-      endDate: "Present",
+      startDate: "January 2017",
+      endDate: "January 2023",
       text: "I am a student of Biotechnology Department. I have had basic Microbiology, Biochemistry, Crop Science and Production knowledge. I am yet to graduate."
    },
 

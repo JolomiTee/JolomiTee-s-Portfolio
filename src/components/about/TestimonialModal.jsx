@@ -1,4 +1,3 @@
-import React from 'react'
 import QuoteMark from '../../assets/icons/icon-quote.svg'
 
 const TestimonialModal = ({ show, hide, content }) => {

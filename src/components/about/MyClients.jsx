@@ -1,22 +1,9 @@
-import React from 'react'
 import GreenBarter from "../../assets/images/Greenbarter.png"
-import Hubbab from "../../assets/images/Hubbab Company.png"
-import Revinance from "../../assets/images/Revinance.png"
 const info = [
    {
       link: "https://greenbarter.co",
       name: "Greenbarter Exchange",
       img: GreenBarter,
-   },
-   {
-      link: "https://revinance.com",
-      name: "Revinance",
-      img: Revinance,
-   },
-   {
-      link: "https://hubbab.com",
-      name: "Hubbab & Associates",
-      img: Hubbab,
    },
 ]
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import DesignIcon from '../../assets/icons/icon-design.svg'
 import IconDev from '../../assets/icons/icon-dev.svg'
 

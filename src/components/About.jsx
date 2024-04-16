@@ -1,6 +1,4 @@
-import React from 'react'
 import Services from './about/Services'
-import Testimonial from './about/Testimonial'
 import MyClients from './about/MyClients'
 
 const About = () => {
@@ -20,8 +18,6 @@ const About = () => {
          <Services />
 
          <MyClients />
-
-         {/* <Testimonial /> */}
 
       </>
    )
