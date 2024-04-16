@@ -13,7 +13,7 @@ const info = [
          duration: "April 2024 - Present",
          text: "I was hired by the Williams Synergies Limited Development team as a frontend Engineer, selected for my proven expertise in creating seamless and visually appealing user interfaces. My job involved providing frontend solutions to the company clients by translating design to code, integrating backend solutions to the frontend to deliver complete web solutions that align with the company's development objectives",
          link: "https://williamssynergy.com/web.html",
-         linkText: "Got to Williams Synergies Limited",
+         linkText: "Go to Williams Synergies Limited",
       },
       {
          devExperience: "Adesther Global Web Services",
@@ -27,7 +27,7 @@ const info = [
          duration: "October 2023 - January 2024",
          text: "Zepam is a Co-trekking, Co-studying and Co-gaming innovative platform that encourages users to co-participate in social, physical, and educational activities while earning rewards. I joined the Zepama Development team as a frontend web developer, providing general frontend development services such as building modern responsive and functional websites and handling web hosting services to improve Zepama's online presence.",
          link: "https://zepama.com",
-         linkText: "Got to Zepama",
+         linkText: "Go to Zepama",
       },
       {
          devExperience: "A Hospital Management System",
