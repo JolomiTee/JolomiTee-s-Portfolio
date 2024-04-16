@@ -263,7 +263,7 @@ const Resume = () => {
          <section className="skill mb-8">
             <h3 className="h3 mb-3">Tools of the Trade</h3>
 
-            <ul className="skills-list flex flex-wrap gap-3 justify-center items-center">
+            <ul className="skills-list flex flex-wrap gap-5 justify-center items-center">
                {
                   info[2].map((items, index) => (
                      <li key={index} className="skill-item">
