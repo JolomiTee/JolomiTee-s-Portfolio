@@ -9,6 +9,27 @@ const info = [
 
    [
       {
+         devExperience: "Williams Synergies Limited",
+         duration: "April 2024 - Present",
+         text: "I was hired by the Williams Synergies Limited Development team as a frontend Engineer, selected for my proven expertise in creating seamless and visually appealing user interfaces. My job involved providing frontend solutions to the company clients by translating design to code, integrating backend solutions to the frontend to deliver complete web solutions that align with the company's development objectives",
+         link: "https://williamssynergy.com/web.html",
+         linkText: "Got to Williams Synergies Limited",
+      },
+      {
+         devExperience: "Adesther Global Web Services",
+         duration: "January 2024 - Present",
+         text: "I was onboarded to the AGW Service Development team as a frontend Engineer, selected for my proven expertise in creating seamless and visually appealing user interfaces and experience with collaborative development. Hired with the strategic goal of elevating the user experience, my role involves spearheading the design and implementation of modern frontend solutions that align with the service development objectives.",
+         link: "https://www.adesther.com.ng",
+         linkText: "Got to AGW",
+      },
+      {
+         devExperience: "Zepama",
+         duration: "October 2023 - January 2024",
+         text: "Zepam is a Co-trekking, Co-studying and Co-gaming innovative platform that encourages users to co-participate in social, physical, and educational activities while earning rewards. I joined the Zepama Development team as a frontend web developer, providing general frontend development services such as building modern responsive and functional websites and handling web hosting services to improve Zepama's online presence.",
+         link: "https://zepama.com",
+         linkText: "Got to Zepama",
+      },
+      {
          devExperience: "A Hospital Management System",
          duration: "May 2023 - September 2023",
          text: "I collaborated with both Backend and Frontend developers to create a powerful and functional Hospital Management System. It's features include keeping track of patient data, purchases and billings, inventory items, booking of apointments, and general digital storage and handling of data pertaining to activities carried out in a hospital establishment. It is a database backed application with a large number of API integrations that allow for seamless creation, retrieval, updating and deletion of hospital data.",
