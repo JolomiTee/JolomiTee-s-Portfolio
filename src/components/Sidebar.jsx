@@ -20,7 +20,7 @@ const Sidebar = () => {
          <div className="sidebar-info relative flex justify-start items-center gap-[15px] md:gap-[25px] 2xl:flex-col">
 
             <figure className="avatar-box bg-gradient-onyx rounded-2xl">
-               <img src={ProfilePhoto} alt="Jolomi Taiwo" width="80" className='rounded-2xl md:w-[100px] 2xl:w-[120px] ' />
+               <img src={ProfilePhoto} alt="Jolomi Taiwo" title="Jolomi Taiwo" width="80" className='rounded-2xl md:w-[100px] 2xl:w-[120px] ' />
             </figure>
             <div className="info-content">
                <h1 className="name text-white-2 text-fs-2 font-fw-500 text-center md:mb-3 md:text-[20px]" title="Jolomi Taiwo">Jolomi Taiwo E.</h1>
