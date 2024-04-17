@@ -6,14 +6,14 @@ const info = [
       img: IconDev,
       alt: 'Design icon',
       title: 'Web Design and Development',
-      text: 'I have Internship and Real world working experience of Frontend Web Development technologies and building functional and dynamic websites that meet modern web development standards. I am also able to work and integrate smoothly into a development team to ensure building a high quality web product.',
+      text: "I bring a wealth of hands-on expertise in frontend web development, adept at crafting dynamic, standards-compliant websites. With a strong grasp of modern technologies, I ensure the creation of functional and visually appealing interfaces. My ability to seamlessly integrate into development teams enables the delivery of high-quality web products.",
 
    },
    {
       img: DesignIcon,
       alt: 'Development icon',
-      title: "I'm also Freelance!!!",
-      text: 'I am able to confidently offer my skills as a service to clients or businesses that require creating pixel perfect webpages from design prototypes, while also making their interfaces highly responsive and useable by all kinds of people. Whether its a landing page or a web app interface... I\'m sure to deliver!',
+      title: "#OPENTOWORK",
+      text: "Props to LinkedIn. I confidently offer my expertise to clients and businesses seeking pixel-perfect webpage creation from design prototypes. My focus lies in ensuring highly responsive and user-friendly interfaces accessible to diverse audiences. Whether it's crafting a landing page or a complex web app interface, I guarantee impeccable delivery.",
    }
 ]
 
@@ -21,7 +21,7 @@ const Services = () => {
    return (
       <section className="service mb-8">
          <h3 className="h3 service-title mb-5">What I'm Doing</h3>
-         <ul className="service-list grid grid-cols-1 gap-5 xl:grid-cols-2">
+         <ul className="service-list grid grid-cols-1 gap-6 xl:grid-cols-2">
             {
                info.map((item, index) => (
                   <li key={index} className="service-item relative bg-gradient-onyx p-5 rounded-[14px] shadow-2 z-[1] before:absolute inset-[1px] before:bg-gradient-jet before:rounded-inherit before:z-[1] md:flex">

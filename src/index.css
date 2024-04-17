@@ -44,7 +44,7 @@
 
 /* REUSED STYLE */
 .sidebar, article{
-    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-[15px] z-[1] transition-2 md:w-[520px] md:m-auto md:p-7;
+    @apply bg-eerie-black-2 border border-solid border-jet shadow-1 rounded-[20px] p-4 z-[1] transition-2 md:w-[520px] md:m-auto md:p-7;
 }
 .separator{
     @apply w-full h-[1px] bg-jet my-4 mx-0;
@@ -176,14 +176,13 @@ article.active{
 .timeline-item:not(:last-child)::before{
     content: "";
     height: calc(100% + 50px);
-    @apply absolute top-[-25px] left-[-30px] w-[1px] bg-jet
+    @apply absolute top-[-25px] left-[-23px] w-[1px] bg-jet
 }
 .timeline-item::after{
     content: '';
-    @apply absolute top-[5px] left-[-33px] w-[6px] h-[6px] bg-gradient-yellow rounded-full shadow-timeline
+    @apply absolute top-[5px] left-[-25px] w-[6px] h-[6px] bg-gradient-yellow rounded-full shadow-timeline
 
 }
-
 
 /* Projects */
 .project-item{

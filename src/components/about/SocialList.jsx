@@ -7,7 +7,7 @@ const info = {
          title: "Github"
       },
       {
-         href: "https://www.linkedin.com/in/jolomitee1029",
+         href: "https://www.linkedin.com/in/jolomitee",
          ion_icon: "logo-linkedin",
          title: "LinkedIn"
       },

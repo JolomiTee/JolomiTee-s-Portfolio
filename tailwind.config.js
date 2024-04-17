@@ -9,7 +9,7 @@ export default {
             sm: '450px',
             md: '580px',
             lg: '760px',
-            xl: '1080px',
+            xl: '1024px',
             '2xl': '1250px'
         },
         colors: {
