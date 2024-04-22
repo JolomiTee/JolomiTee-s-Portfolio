@@ -22,6 +22,7 @@ import Project21 from "../assets/images/ProjectImg/Project21.png";
 import Project23 from "../assets/images/ProjectImg/Project23.png";
 import Project24 from "../assets/images/ProjectImg/Project24.png";
 import Project25 from "../assets/images/ProjectImg/Project25.png";
+import Project26 from "../assets/images/ProjectImg/Project26.png";
 
 export const projects = [
 	{
@@ -190,6 +191,13 @@ export const projects = [
 		link: "https://smlekki.com",
 		img: Project25,
 		category: "Landing Page, React, CSS",
+		responsive: true,
+	},
+	{
+		name: "925 Lounge",
+		link: "https://829-lounge.vercel.app.com",
+		img: Project26,
+		category: "Landing Page, React, Tailwind, Admin, Services",
 		responsive: true,
 	},
 	// {
