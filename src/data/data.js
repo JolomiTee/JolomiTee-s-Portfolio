@@ -214,7 +214,7 @@ export const info = [
 		{
 			school: "Federal University of Technology Akure",
 			startDate: "January 2017",
-			endDate: "January 2023",
+			endDate: "January 2024",
 		},
 	],
 
