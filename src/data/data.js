@@ -23,6 +23,7 @@ import Project23 from "../assets/images/ProjectImg/Project23.png";
 import Project24 from "../assets/images/ProjectImg/Project24.png";
 import Project25 from "../assets/images/ProjectImg/Project25.png";
 import Project26 from "../assets/images/ProjectImg/Project26.png";
+import Project27 from "../assets/images/ProjectImg/Project27.png";
 
 export const projects = [
 	{
@@ -194,10 +195,17 @@ export const projects = [
 		responsive: true,
 	},
 	{
-		name: "925 Lounge",
-		link: "https://829-lounge.vercel.app.com",
+		name: "829 Lounge",
+		link: "https://829-lounge-v3.vercel.app",
 		img: Project26,
 		category: "Landing Page, React, Tailwind, Admin, Services",
+		responsive: true,
+	},
+	{
+		name: "Atodo Group",
+		link: "https://paygreens.vercel.app/",
+		img: Project27,
+		category: "Landing Page, NextJS, Tailwind, Cloudinary, Gallery",
 		responsive: true,
 	},
 	// {
