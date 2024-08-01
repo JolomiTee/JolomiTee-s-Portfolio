@@ -24,6 +24,7 @@ import Project24 from "../assets/images/ProjectImg/Project24.png";
 import Project25 from "../assets/images/ProjectImg/Project25.png";
 import Project26 from "../assets/images/ProjectImg/Project26.png";
 import Project27 from "../assets/images/ProjectImg/Project27.png";
+import Project29 from "../assets/images/ProjectImg/Project29.png";
 
 export const projects = [
 	{
@@ -205,7 +206,15 @@ export const projects = [
 		name: "Atodo Group",
 		link: "https://paygreens.vercel.app/",
 		img: Project27,
-		category: "Landing Page, NextJS, Tailwind, Cloudinary, Gallery",
+		category: "Landing Page, NextJS, Tailwind, Shadcn-ui, Cloudinary, Gallery",
+		responsive: true,
+	},
+	{
+		name: "Digital Hippo",
+		link: "",
+		img: Project29,
+		category:
+			"Ecommerce, NextJS, Tailwind, Shadcn-ui, PayloadCMS, MongoDB, Resend, Stripe, Express",
 		responsive: true,
 	},
 	// {
