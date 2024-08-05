@@ -25,6 +25,7 @@ import Project25 from "../assets/images/ProjectImg/Project25.png";
 import Project26 from "../assets/images/ProjectImg/Project26.png";
 import Project27 from "../assets/images/ProjectImg/Project27.png";
 import Project29 from "../assets/images/ProjectImg/Project29.png";
+import Project30 from "../assets/images/ProjectImg/Project30.png";
 
 export const projects = [
 	{
@@ -214,8 +215,15 @@ export const projects = [
 		link: "",
 		img: Project29,
 		category:
-			"Ecommerce, NextJS, Tailwind, Shadcn-ui, PayloadCMS, MongoDB, Resend, Stripe, Express",
+			"Ecommerce, NextJS, Tailwind, Shadcn-ui, PayloadCMS, MongoDB, Resend, Stripe, Express, Zustand",
 		responsive: true,
+	},
+	{
+		name: "Prodecomm E-commerce Demo",
+		link: "https://prodecomm.vercel.app",
+		img: Project30,
+		category: "Ecommerce, NextJS, Tailwind, Sanity.io, Stripe, Zustand",
+		responsive: false,
 	},
 	// {
 	//     name: String,
