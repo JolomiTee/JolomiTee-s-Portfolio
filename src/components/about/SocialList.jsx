@@ -1,23 +1,23 @@
 
 const info = {
-   items: [
-      {
-         href: "https://github.com/JolomiTee",
-         ion_icon: "logo-github",
-         title: "Github"
-      },
-      {
-         href: "https://www.linkedin.com/in/jolomitee",
-         ion_icon: "logo-linkedin",
-         title: "LinkedIn"
-      },
-      {
-         href: "https://twitter.com/truff_lazy",
-         ion_icon: "logo-twitter",
-         title: "Twitter"
-      },
-   ]
-}
+	items: [
+		{
+			href: "https://github.com/JolomiTee",
+			ion_icon: "logo-github",
+			title: "Github",
+		},
+		{
+			href: "https://www.linkedin.com/in/jolomitee",
+			ion_icon: "logo-linkedin",
+			title: "LinkedIn",
+		},
+		{
+			href: "https://twitter.com/truff_lazy",
+			ion_icon: "logo-twitter",
+			title: "X formerly (Twitter)",
+		},
+	],
+};
 
 const SocialList = () => {
    return (
