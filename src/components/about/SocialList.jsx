@@ -12,9 +12,9 @@ const info = {
 			title: "LinkedIn",
 		},
 		{
-			href: "https://twitter.com/truff_lazy",
+			href: "https://x.com/jolomitee",
 			ion_icon: "logo-twitter",
-			title: "X formerly (Twitter)",
+			title: "X (formerly Twitter)",
 		},
 	],
 };
